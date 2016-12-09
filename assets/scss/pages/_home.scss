@@ -32,7 +32,7 @@
   -webkit-align-items: initial;
   -ms-flex-align: initial;
   align-items: initial;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   @include clearfix;
 }
 
@@ -66,6 +66,9 @@
   -ms-flex-item-align: auto;
   align-self: auto;
   img {
+    -webkit-box-shadow: 30px 30px 40px 0px rgba(0,0,0,0.41);
+    -moz-box-shadow: 30px 30px 40px 0px rgba(0,0,0,0.41);
+    box-shadow: 30px 30px 40px 0px rgba(0,0,0,0.41);
     @include screen-above(700px) {
       padding-left: 20px;
     }
