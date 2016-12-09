@@ -65,10 +65,14 @@
   -webkit-align-self: auto;
   -ms-flex-item-align: auto;
   align-self: auto;
+  img {
+    @include screen-above(700px) {
+      padding-left: 20px;
+    }
+  }
   @include screen-above(700px) {
     -webkit-flex: 0 1 40%;
     -ms-flex: 0 1 40%;
     flex: 0 1 40%;
-    padding-left: 20px;
   }
 }
