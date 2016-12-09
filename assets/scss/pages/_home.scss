@@ -43,15 +43,12 @@
   -webkit-align-self: auto;
   -ms-flex-item-align: auto;
   align-self: auto;
-  @include screen-between($iPadMini, $iPad) {
-    -webkit-flex: 0 1 50%;
-    -ms-flex: 0 1 50%;
-    flex: 0 1 50%;
-  }
-  @include screen-above($iPad) {
+  margin-bottom: 20px;
+  @include screen-above(700px) {
     -webkit-flex: 0 1 60%;
     -ms-flex: 0 1 60%;
     flex: 0 1 60%;
+    margin-bottom: 0;
   }
 }
 
@@ -65,15 +62,10 @@
   -webkit-align-self: auto;
   -ms-flex-item-align: auto;
   align-self: auto;
-  padding-left: 20px;
-  @include screen-between($iPadMini, $iPad) {
-    -webkit-flex: 0 1 50%;
-    -ms-flex: 0 1 50%;
-    flex: 0 1 50%;
-  }
-  @include screen-above($iPad) {
+  @include screen-above(700px) {
     -webkit-flex: 0 1 40%;
     -ms-flex: 0 1 40%;
     flex: 0 1 40%;
+    padding-left: 20px;
   }
 }
