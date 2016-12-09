@@ -48,9 +48,9 @@
   align-self: auto;
   margin-bottom: 20px;
   @include screen-above(700px) {
-    -webkit-flex: 0 1 60%;
-    -ms-flex: 0 1 60%;
-    flex: 0 1 60%;
+    -webkit-flex: 0 1 55%;
+    -ms-flex: 0 1 55%;
+    flex: 0 1 55%;
     margin-bottom: 0;
   }
 }
@@ -74,8 +74,8 @@
     }
   }
   @include screen-above(700px) {
-    -webkit-flex: 0 1 40%;
-    -ms-flex: 0 1 40%;
-    flex: 0 1 40%;
+    -webkit-flex: 0 1 45%;
+    -ms-flex: 0 1 45%;
+    flex: 0 1 45%;
   }
 }
