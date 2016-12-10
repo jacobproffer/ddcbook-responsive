@@ -8,7 +8,7 @@
       margin-bottom: 0;
     }
   }
-  @include screen-above(700px) {
+  @include screen-above(492px) {
     padding: 100px 1.25em;
   }
 }
@@ -47,7 +47,7 @@
   -ms-flex-item-align: auto;
   align-self: auto;
   margin-bottom: 20px;
-  @include screen-above(700px) {
+  @include screen-above(492px) {
     -webkit-flex: 0 1 55%;
     -ms-flex: 0 1 55%;
     flex: 0 1 55%;
@@ -69,13 +69,53 @@
     -webkit-box-shadow: 30px 30px 40px 0px rgba(0,0,0,0.41);
     -moz-box-shadow: 30px 30px 40px 0px rgba(0,0,0,0.41);
     box-shadow: 30px 30px 40px 0px rgba(0,0,0,0.41);
-    @include screen-above(700px) {
+    @include screen-above(492px) {
       padding-left: 20px;
     }
   }
-  @include screen-above(700px) {
+  @include screen-above(492px) {
     -webkit-flex: 0 1 45%;
     -ms-flex: 0 1 45%;
     flex: 0 1 45%;
+  }
+}
+
+.retailer-wrapper {
+  max-width: 560px;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-align-items: initial;
+  -ms-flex-align: initial;
+  align-items: initial;
+}
+
+.retailer {
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+  -webkit-flex: 0 1 16.666%;
+  -ms-flex: 0 1 16.666%;
+  flex: 0 1 16.666%;
+  padding-right: 20px;
+  @include screen-above($iPadMini) {
+    -webkit-flex: 0 1 16.666%;
+    -ms-flex: 0 1 16.666%;
+    flex: 0 1 16.666%;
   }
 }

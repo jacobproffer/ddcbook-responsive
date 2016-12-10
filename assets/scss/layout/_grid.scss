@@ -20,3 +20,12 @@
     @include flexgrid(3, 1rem);
 	}
 }
+
+.grid-6 {
+	@include screen-between($iPadMini, $iPad) {
+		@include flexgrid(3, 1rem);
+	}
+	@include screen-above($iPad) {
+		@include flexgrid(6, 1rem);
+	}
+}
